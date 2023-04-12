@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - sourse: /
+    destination: /var/www/html
+hoocks:
+ AfterInstall:
+  - location: script/install.sh
+  - timeout: 300
+    runas: root
+    
+ ApplicationStart:
+  - location: script/start.sh
+    timeout: 300
+    runas: root
