@@ -11,7 +11,7 @@ phases:
       - cp index.html var/www/html/
   post_build:
     commands:
-      - echo Done & Configured.
+      - echo Done and Configured.
 artifacts:
-  file:
-    - "**/*"
+    file:
+      - "**/*"
